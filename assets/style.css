@@ -1,0 +1,136 @@
+/* General Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+/* Flexbox Layout for Main Divs */
+.start{
+        font-weight: bold;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 2500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 700px ;
+}
+
+/* Navigation and Content Area Styling */
+.nav  {
+    display: flex;
+    flex-direction: column;
+    width: 25% ;
+    padding: 20px;
+    overflow-y: auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 75% ;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.nav {
+    background: #118e1e;
+    border-right: 2px solid #eee;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    max-height: 100px;
+    margin-right: 45px;
+}
+
+.header .company-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4f237e;
+}
+
+/* Description Styling */
+.description_ticker {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Graphs Container Styling */
+.graph-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Field Styling */
+input[type="text"], input[type="number"], .datepicker input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    
+}
+
+input[type="text"]:focus, input[type="number"]:focus, .datepicker input:focus {
+    border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav, .content {
+        width: 100%;
+    }
+}
